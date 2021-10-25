@@ -53,7 +53,7 @@ public class Employee {
     private String name;
 
     @Column(name=JpaConst.EMP_COL_PASS,length=64,nullable=false)
-    private String passward;
+    private String password;
 
     @Column(name=JpaConst.EMP_COL_ADMIN_FLAG,nullable=false)
     private Integer adminFlag;
