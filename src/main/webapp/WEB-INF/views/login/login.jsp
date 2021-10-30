@@ -4,7 +4,7 @@
 <%@ page import="constants.ForwardConst"%>
 
 <c:set var="action" value="${ForwardConst.ACT_AUTH.getValue() }" />
-<c:set var="command" value="${ForwardConst.CMD_LOGIN.getValue() } }" />
+<c:set var="command" value="${ForwardConst.CMD_LOGIN.getValue() } " />
 
 <c:import url="/WEB-INF/views/layout/app.jsp">
     <c:param name="content">
@@ -19,16 +19,16 @@
             </div>
         </c:if>
         <h2>ログイン</h2>
-        <form method="POST"
-            action="<c:url value='/?action=${action }&command=${command }'/>">
+        <form method="POST" action="<c:url value='/?action=${action }&command=${command }'/>">
             <label for="${AttributeConst.EMP_CODE.getValue() }">社員番号</label><br />
-            <input type="text" name="${AttributeConst.EMP_CODE.getValue() }"
-                value="${code }" /> <br />
-            <br /> <label for="${AttributeConst.EMP_PASS.getValue() }">パスワード</label><br />
+            <input type="text" name="${AttributeConst.EMP_CODE.getValue() }" value="${code }" />
+            <br /><br />
+
+            <label for="${AttributeConst.EMP_PASS.getValue() }">パスワード</label><br />
             <input type="password" name="${AttributeConst.EMP_PASS.getValue() }" />
-            <br />
-            <br /> <input type="hidden"
-                name="${AttributeConst.TOKEN.getValue() }" value="${_token }" />
+            <br /><br />
+
+            <input type="hidden" name="${AttributeConst.TOKEN.getValue() }" value="${_token }" />
             <button type="submit">ログイン</button>
         </form>
     </c:param>
