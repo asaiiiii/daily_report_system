@@ -21,7 +21,7 @@ public interface JpaConst {
     int EMP_DEL_TRUE=1;
     int EMP_DEL_FALSE=0;
 
-    String TABLE__REP="reports";
+    String TABLE_REP="reports";
 
     String REP_COL_ID="id";
     String REP_COL_EMP="employee_id";
