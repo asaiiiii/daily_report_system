@@ -4,7 +4,7 @@
 <%@ page import="constants.AttributeConst" %>
 
 <c:set var="actTop" value="${ForwardConst.ACT_TOP.getValue() }"/>
-<c:set var="actEMP" value="${ForwardConst.ACT_EMP.getValue() }"/>
+<c:set var="actEmp" value="${ForwardConst.ACT_EMP.getValue() }"/>
 <c:set var="actRep" value="${ForwardConst.ACT_REP.getValue() }"/>
 <c:set var="actAuth" value="${ForwardConst.ACT_AUTH.getValue() }"/>
 
